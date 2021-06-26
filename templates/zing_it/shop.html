@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="../../static/zing_it/css/styles.css" />
+
+    <link rel="stylesheet" href="../../static/zing_it/css/shop.css" />
+
+    <link rel="shortcut icon"
+        href="https://dl.dropboxusercontent.com/s/8yrizndh4r4mvz4/Liverpool_FC_Icon_32.png?dl=0" />
+
+    <title> Liverpool FC </title>
+
+    <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+
+</head>
+
+<body class="works_on_smartphone">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v4.0"></script>
+
+    <header>
+        <div class="mainimg"> <img src="https://dl.dropboxusercontent.com/s/suarcpnu1nzxaip/LiverpoolHeader.jpg?dl=0"
+                style="width:100%" alt="wallpaper"> </div>
+
+
+        <nav class="navbar" id="mynavbar">
+            <ul>
+                <li><a href="javascript:void(0)" class="icon" onclick="myFunction()">&#9776; Liverpool FC </a></li>
+                <li><a href="{% url 'home' %}" class="active">⚽</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'team' %}">Team</a></li>
+                <li><a href="{% url 'shop' %}">Shop</a></li>
+                <li><a href="{% url 'tweets' %}">Tweets</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("mynavbar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+        </script>
+
+        <div class="right">
+
+            <div class="fb-share-button" data-href="http://54.234.250.91/index.html" data-layout="button_count"
+                data-size="large"><a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">Compartir</a></div>
+
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+                data-size="large">Tweet</a>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <div class="item">
+                <div class="item-title">
+                    <h1>NB Jersey</h1>
+                </div>
+                <div class="item-image">
+                    <img src="https://dl.dropboxusercontent.com/s/2bea00e63o2ofr2/Liverpool%20Jersey%20%28edited-Pixlr%29%20%282%29.png?dl=0"
+                        alt="NB Jersey">
+                </div>
+                <div class="item-content">
+                    <p>
+                        Color: Red.<br><br>
+                        The shirt has been engineered with NBdry technology which wicks sweat away from your skin to
+                        keep you feeling fresh and focused, whilst the mesh panelling helps to keep you feeling cool and
+                        the team crest highlights that your heart belongs to the Anfield club.</p>
+
+                    <a href="https://www.amazon.com/New-Balance-Liverpool-Jersey-Large/dp/B07QHPKRGK/ref=sr_1_3?crid=DW3TNSZR5WHH&keywords=liverpool+fc+jersey&qid=1565733091&s=gateway&sprefix=liverpool+fc+%2Caps%2C439&sr=8-3"
+                        class="read">Buy now🛒</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-title">
+                    <h1>FINALE 18</h1>
+                </div>
+                <div class="item-image">
+                    <img src="https://dl.dropboxusercontent.com/s/57jyix0vt3yxf31/Champions%20Ball1%20%28edited-Pixlr%29.png?dl=0"
+                        alt="FINALE18">
+                </div>
+                <div class="item-content">
+                    <p>Color: White and Blue.<br><br>
+                        Latest version of the official champions league ball. New digitally printed design inverts the
+                        layout of previous adidas UEFA Champions League balls. Thermally bonded seamless surface for a
+                        more predictable trajectory, better touch and lower water uptake.(Ball edition: 2019).</p>
+                    <a href="https://www.amazon.com/adidas-CW4133-FINALE18-OMB/dp/B07BHZJLHP/ref=sr_1_1?crid=TZOP7KJTQDMG&keywords=champions+league+soccer+ball&qid=1565746799&s=gateway&sprefix=champions+league+%2Caps%2C219&sr=8-1"
+                        class="read">Buy now🛒</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-title">
+
+                    <h1>Coffee Mug</h1>
+                </div>
+                <div class="item-image">
+                    <img src="https://dl.dropboxusercontent.com/s/pugoa8u95m3l7vw/Klopp%20Mug%20Normal%20One%20%28edited-Pixlr%29.jpg?dl=0"
+                        alt="Coffee Mug">
+                </div>
+                <div class="item-content">
+                    <p>MATERIAL: Made from good ceramic, safe, non-toxic, and durable for daily use. This high quality
+                        11oz, 15oz ceramic mugs is perfect for all hot & cold beverages. Use for microwave and
+                        dishwasher are safe.</p>
+                    <a href="https://www.amazon.com/Normal-Jurgen-Coffee-Ceramic-Novelty/dp/B07SKRH38C/ref=sr_1_19?keywords=the+normal+one+mug&qid=1565747097&s=gateway&sr=8-19"
+                        class="read">Buy now🛒</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-title">
+                    <h1>Travel Mug</h1>
+                </div>
+                <div class="item-image">
+                    <img src="https://dl.dropboxusercontent.com/s/wh2hetuf15stixb/Steel%20Travel%20Mug%20%28edited-Pixlr%29.jpg?dl=0"
+                        alt="Travel Mug">
+                </div>
+                <div class="item-content">
+                    <p>Liverpool FC Executive Handle-Less Stainless Steel Travel Mug, 450ML Thermos Style Travel Mug -
+                        Retains Hot Or Cold Temperatures.
+                        Spill Resistant Screw Top Lid With Sliding Easy Sip Access</p>
+                    <a href="https://www.amazon.com/Liverpool-Executive-Handle-Less-Stainless-Travel/dp/B07VC7VZLY/ref=sr_1_11?keywords=liverpool+fc&qid=1565732354&s=gateway&sr=8-11"
+                        class="read">Buy now🛒</a>
+                </div>
+            </div>
+
+
+
+
+        </article>
+
+
+
+        <aside>
+
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://liverpool-1.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+
+            <a href="http://foo.com/bar.html#disqus_thread">Link</a>
+
+
+
+        </aside>
+
+
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>Made by <strong><a href="https://twitter.com/Bryano_13" target="_blank">BRYAN ⚽RTIZ
+                    LENIS</a></strong><br>for<br><strong><a href="https://www.holbertonschool.com"
+                    target="_blank">H⚽LBERT⚽N SCH⚽⚽L</a></strong></p>
+    </footer>
+
+</body>
+
+</html>

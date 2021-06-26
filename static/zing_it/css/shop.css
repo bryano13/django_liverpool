@@ -1,0 +1,51 @@
+/*CSS USE ONLY FOR THE SHOP PAGE*/
+.item{
+    width:48%;
+    float:left;
+    position:relative;
+}
+.item-title{
+    padding: 15px;
+}
+
+.item-title h1{
+    font-size: 28px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.item-image{
+    overflow: hidden;
+}
+
+.item-image img{
+    transition: transform .5s ease;
+    width: 100%;
+}
+.item-image img:hover{
+    transform: scale(1.7);
+}
+
+
+.item-content{
+    padding: 20px;
+}
+
+.item-content p{
+    margin-bottom: 15px;
+    color: #111;
+}
+
+@media screen and (max-width: 535px) {
+    .item{
+	width:95%;
+	float:none;
+	margin:auto;
+    }
+    .item-image{
+	width:65%;
+	float:none;
+	margin:auto;
+    }
+}
+/*END OF CSS JUST FOR THE SHOP PAGE*/

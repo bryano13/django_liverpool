@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="behavior.js"></script>
+
+    <link rel="stylesheet" href="../../static/zing_it/css/styles.css" />
+
+    <link rel="shortcut icon"
+        href="https://dl.dropboxusercontent.com/s/8yrizndh4r4mvz4/Liverpool_FC_Icon_32.png?dl=0" />
+
+    <meta charset="UTF-8">
+
+    <title> Liverpool FC </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+
+
+</head>
+
+<body class="works_on_smartphone">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v4.0"></script>
+
+    <header>
+        <div class="mainimg"> <img src="https://dl.dropboxusercontent.com/s/suarcpnu1nzxaip/LiverpoolHeader.jpg?dl=0"
+                style="width:100%" alt="wallpaper"> </div>
+
+
+        <nav class="navbar" id="mynavbar">
+            <ul>
+                <li><a href="javascript:void(0)" class="icon" onclick="myFunction()">&#9776; Liverpool FC </a></li>
+                <li><a href="{% url 'home' %}" class="active">⚽</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'team' %}">Team</a></li>
+                <li><a href="{% url 'shop' %}">Shop</a></li>
+                <li><a href="{% url 'tweets' %}">Tweets</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("mynavbar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+        </script>
+
+        <div class="right">
+
+            <div class="fb-share-button" data-href="http://54.234.250.91/index.html" data-layout="button_count"
+                data-size="large"><a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">Compartir</a></div>
+
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+                data-size="large">Tweet</a>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <h1>LIVERPOOL FC</h1>
+
+            <img class="small" id="smart_thumbnail"
+                src="https://dl.dropboxusercontent.com/s/gxxp7gsw5m8hae0/LIverpool%20Logo2.jpg?dl=0" alt="LiverpooLogo">
+
+            <h2>Champion of champions:</h2>
+            <p>Founded the 3rd of June of 1892, and 127 years later Liverpool has once more become the best football
+                team in the world after defeating Totteham Hotspur in the Uefa Champions League Final this year. With
+                this win, the team has 6 trophies of this competition in all of its history, placing them third on the
+                top rank of football clubs with more victories on this tournament.</p>
+            <hr />
+            <h2>Walk on?</h2>
+            <h3>YES!, Definetly</h3>
+            <p>Liverpool keeps walking on, and like its official theme song says:"You´ll never walk alone". Liverpool
+                walks hand by hand with world class players like: </p>
+            <ul>
+                <li>Mohamed Salah</li>
+                <li>Sadio Mané</li>
+                <li>Roberto Firmino</li>
+                <li>Virgil Van Dijk</li>
+                <li>And its goalkeeper Alisson Becker</li>
+            </ul>
+            <hr />
+            <h3>The "Normal" One</h3>
+            But how can we talk about the greatness of this team without ever mentioning the "NORMAL ONE", the man that
+            made it all possible, the strategist, the brain in the bench: <b>Jurgen Klopp!</b>
+            <p> </p>
+            <div class="polaroid">
+                <img src="https://dl.dropboxusercontent.com/s/s8bu43f84fyruio/The%20Normal%20One.png?dl=0"
+                    style="width:100%" alt="NormalOne">
+                <div class="container">
+                    <p>When Jurgen Klopp first came to the Premier League people were comparing him with the "Special
+                        One" Jose Mourinho. His answer to that was, "If he is the special one then I´ll be the
+                        <Strong>Normal One"</strong></p>
+                </div>
+            </div>
+
+            <hr />
+            <div>
+                <h3>Liverpool Theme Song: You´ll Never Walk Alone"</h3>
+                <p>You’ll Never Walk Alone entered the Top 10 ahead of a home game against West Brom on October 19,
+                    1963, and that may have been the first occasion fans sang along with the song. Two weeks later it
+                    was No.1, so was played just before kick-off against Leicester. The song spent four weeks at No.1,
+                    and nine weeks in the Top 10, but fans continued to sing it long after it dropped out of the charts.
+                </p>
+            </div>
+
+            <video width="700" controls>
+                <source src="https://dl.dropboxusercontent.com/s/msj81p95xqu7fn3/Video.mp4?dl=0" type="video/mp4">
+            </video>
+
+
+        </article>
+
+
+
+        <aside>
+
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://liverpool-1.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+
+            <a href="http://foo.com/bar.html#disqus_thread">Link</a>
+
+        </aside>
+
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>Made by <strong><a href="https://twitter.com/Bryano_13" target="_blank">BRYAN ⚽RTIZ
+                    LENIS</a></strong><br>for<br><strong><a href="https://www.holbertonschool.com"
+                    target="_blank">H⚽LBERT⚽N SCH⚽⚽L</a></strong></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+
+                var thumbnailElement = document.getElementById("smart_thumbnail");
+                thumbnailElement.addEventListener("click", function () {
+                    var nameClass = thumbnailElement.className;
+                    if (nameClass === "small") {
+                        thumbnailElement.className = "";
+                    } else {
+                        thumbnailElement.className = "small";
+                    }
+                });
+            });
+    </script>
+
+</body>
+
+</html>

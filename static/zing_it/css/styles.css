@@ -1,0 +1,115 @@
+/* TAGS THAT ARE STANDARD FOR ALL THE PAGES*/
+/* CSS for the main tags, body, main, article, footer and aside*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article{
+    flex: 2;
+    overflow-y: auto;
+    display:flex;
+    flex-direction: row;
+}
+
+article p{
+    text-align: justify;
+}
+aside {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #DDDBDE;
+}
+/* Footer Section*/
+footer {
+    background-color:#DDDBDE;
+    padding: 10px;
+}
+
+footer, #p{
+    text-align: center;
+    color: black;
+}
+/* Links for holberton and my name*/
+footer a{
+    color: white;
+}
+/*Change color to blue at mouse hover*/
+footer a:hover{
+    color: rgb(18, 114, 223);
+}
+/* END OF MAIN TAGS */
+
+/* Heather tag with auto height. Contains the navbar inside it*/
+header{
+    height:auto !important;
+}
+
+/* BEGINNING OF NAVBAR SECTION */
+/*Navigation bar for all of the pages*/
+.navbar{
+    background-color: #333;
+    padding: 14px 16px;
+    overflow:hidden;
+}
+.navbar a{
+    padding: 14px 16px;
+    color:white;
+    font-size:21px;
+}
+/* Change color on hover */
+.navbar a:hover{
+    background-color:#ddd;
+    color:black;
+}
+
+.navbar .icon{
+    display:none;
+    background-color:#DC143C;
+}
+.active{
+    background-color: #DC143C;
+}
+/* END OF NAVIGATION BAR SECTION */
+
+/* To make the navbar responsive al 500px */
+@media only screen and (max-width:700px){
+    .navbar a{
+	display:none;
+	text-align:center;
+	padding: 3px;
+    }
+
+    .navbar a.icon{
+	float:center;
+	display:block;
+    }
+    @media screen and (max-width: 700px) {
+	.navbar.responsive {position: relative;}
+	.navbar.responsive .icon {
+	    position: relative;
+	    right: 0;
+	    top: 0;
+	}
+	.navbar.responsive a {
+	    float: none;
+	    display: block;
+	    text-align: center;
+	    font-size:17px;
+	}
+	.navbar .active{
+	    background-color:#333;
+	}
+
+	video {
+	    max-width: 100%;
+	    height: auto;
+	    margin:auto;
+    }
+}}
